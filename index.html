@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValidMail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+</head>
+
+<body>
+    <header class="central">
+        <i class="fas fa-mail-bulk"></i></i> <i class="fas fa-envelope-open"></i>
+        <h1>ValidMail</h1> <i class="fas fa-envelope-open"></i> <i class="fas fa-mail-bulk"></i>
+    </header>
+    <div class="central">
+        <h1>Enter an email address you wish to check for its validity in each searchbox below and click begin search
+        </h1>
+    </div>
+    <div class="central">
+        <h2>Output formats</h2>
+    </div>
+    <div class="central">
+        <h4>AutoCorrect: Alternative suggestions for emails that appear to be incorrectly spelt</h4>
+    </div>
+    <div class="central">
+        <h4>Deliverability: What are the chances of the email send being successful based on the above and further
+            techincal aspects</h4>
+    </div>
+    <div class="central">
+        <h4>Format valid: Relates to email having a complete structure with no missing elements</h4>
+    </div>
+    <div class="central">
+        <h4>Previous Search: Was this a previously searched email address based on historical searches?</h4>
+    </div>
+    <div class="central">
+        <container class="gridContainer">
+            <textarea class="emailInput"></textarea>
+            <textarea class="emailInput"></textarea>
+            <textarea class="emailInput"></textarea>
+            <textarea class="emailInput"></textarea>
+            <textarea class="emailInput"></textarea>
+            <textarea class="emailInput"></textarea>
+            <textarea class="emailInput"></textarea>
+            <textarea class="emailInput"></textarea>
+            <textarea class="emailInput"></textarea>
+            <textarea class="emailInput"></textarea>
+        </container>
+    </div>
+    <div class="central">
+        <container class="gridContainer">
+            <button id="searchButton" class="button btn">Begin search</button>
+            <button class="button">Reset searches</button>
+            <button class="button">All historical outputs</button>
+        </container>
+    </div>
+
+    <div class="centralTwo">
+        <container class="outputs"> Original email address:</container>
+        <container class="outputs">AutoCorrect: </container>
+        <container class="outputs">Delieverability: </container>
+        <container class="outputs">Is valid format: </container>
+        <container class="outputs">Was previously searched: </container>
+    </div>
+    <div id="results" class="centralTwo">
+    </div>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script src="./Assets/JS/logic.js"></script>
+</body>
+
+</html>
